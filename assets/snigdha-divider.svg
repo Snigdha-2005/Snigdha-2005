@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 28" fill="none" width="100%" height="28">
+  <defs>
+    <!-- Linear Gradients for Futuristic Flow -->
+    <linearGradient id="divider-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0" />
+      <stop offset="20%" stop-color="#06b6d4" stop-opacity="0.3" />
+      <stop offset="40%" stop-color="#22d3ee" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#c084fc" stop-opacity="1" />
+      <stop offset="60%" stop-color="#a855f7" stop-opacity="0.8" />
+      <stop offset="80%" stop-color="#3b82f6" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Moving Glow Pulse Gradient -->
+    <linearGradient id="pulse-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0">
+        <animate attributeName="offset" values="-0.5; 1.0" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="20%" stop-color="#22d3ee" stop-opacity="0.9">
+        <animate attributeName="offset" values="-0.3; 1.2" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="30%" stop-color="#e879f9" stop-opacity="1">
+        <animate attributeName="offset" values="-0.2; 1.3" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="40%" stop-color="#a855f7" stop-opacity="0.8">
+        <animate attributeName="offset" values="-0.1; 1.4" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0">
+        <animate attributeName="offset" values="0.0; 1.5" dur="4s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="glow" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+      <feMerge>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="subtle-glow" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .pulse-dot {
+      animation: pulse 2.5s ease-in-out infinite alternate;
+    }
+    @keyframes pulse {
+      0% { r: 2px; opacity: 0.4; }
+      100% { r: 3.5px; opacity: 1; filter: drop-shadow(0 0 5px #22d3ee); }
+    }
+    .core-diamond {
+      animation: rotateDiamond 12s linear infinite;
+      transform-origin: 450px 14px;
+    }
+    @keyframes rotateDiamond {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+
+  <!-- Ambient Line Background -->
+  <line x1="80" y1="14" x2="820" y2="14" stroke="url(#divider-grad)" stroke-width="1.2" stroke-linecap="round" />
+
+  <!-- Animated Glowing Stream -->
+  <line x1="120" y1="14" x2="780" y2="14" stroke="url(#pulse-grad)" stroke-width="2" stroke-linecap="round" filter="url(#glow)" />
+
+  <!-- Accent Nodes Left -->
+  <circle cx="260" cy="14" r="2" fill="#22d3ee" opacity="0.8" filter="url(#subtle-glow)" />
+  <circle cx="340" cy="14" r="1.5" fill="#a855f7" opacity="0.7" />
+
+  <!-- Accent Nodes Right -->
+  <circle cx="560" cy="14" r="1.5" fill="#a855f7" opacity="0.7" />
+  <circle cx="640" cy="14" r="2" fill="#3b82f6" opacity="0.8" filter="url(#subtle-glow)" />
+
+  <!-- Center Decorative Cyber Terminal Nodes -->
+  <g filter="url(#glow)">
+    <!-- Outer Diamond -->
+    <rect class="core-diamond" x="444" y="8" width="12" height="12" rx="2" fill="none" stroke="#22d3ee" stroke-width="1.5" opacity="0.85" />
+    <!-- Inner Core Dot -->
+    <circle cx="450" cy="14" r="3" fill="#e879f9" class="pulse-dot" />
+  </g>
+</svg>

@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 180" width="100%" height="180" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="learn-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Step Grad 1 -->
+    <linearGradient id="step-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#083344" />
+      <stop offset="100%" stop-color="#0e2a38" />
+    </linearGradient>
+
+    <!-- Step Grad 2 -->
+    <linearGradient id="step-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b0764" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Step Grad 3 -->
+    <linearGradient id="step-green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+
+    <!-- Step Grad 4 -->
+    <linearGradient id="step-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#172554" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Step Grad 5 -->
+    <linearGradient id="step-violet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4c1d95" />
+      <stop offset="100%" stop-color="#2e1065" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono {
+      font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+    }
+    .node-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+    .node-sub {
+      font-size: 10px;
+      fill: #94a3b8;
+    }
+    .flow-arrow {
+      animation: pulseArrow 2.2s infinite ease-in-out;
+    }
+    @keyframes pulseArrow {
+      0% { opacity: 0.35; }
+      50% { opacity: 1; filter: drop-shadow(0 0 5px #22d3ee); }
+      100% { opacity: 0.35; }
+    }
+  </style>
+
+  <!-- Container -->
+  <rect x="2" y="2" width="816" height="176" rx="10" fill="url(#learn-bg)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1.5" />
+
+  <!-- Subtitle Header -->
+  <text x="24" y="32" class="mono" fill="#64748b" font-size="11" font-weight="600" letter-spacing="1">CONTINUOUS LEARNING ROADMAP</text>
+  <text x="600" y="32" class="mono" fill="#4ade80" font-size="10" font-weight="600">IN ACTIVE PROGRESS 🌱</text>
+
+  <!-- 5 Nodes Pipeline -->
+  <!-- Step 1: Frontend -->
+  <g transform="translate(24, 52)">
+    <rect x="0" y="0" width="130" height="96" rx="8" fill="url(#step-cyan)" stroke="#06b6d4" stroke-width="1.2" />
+    <circle cx="16" cy="18" r="4" fill="#22d3ee" />
+    <text x="28" y="22" class="mono" fill="#22d3ee" font-size="10" font-weight="700">FOUNDATION</text>
+    <text x="14" y="52" class="mono node-title" fill="#f8fafc">Frontend</text>
+    <text x="14" y="70" class="mono node-sub">HTML • CSS • JS</text>
+    <rect x="14" y="80" width="75" height="4" rx="2" fill="#06b6d4" opacity="0.6" />
+  </g>
+
+  <!-- Arrow 1 -->
+  <g class="flow-arrow" transform="translate(160, 92)">
+    <path d="M0 8 L24 8 M16 2 L24 8 L16 14" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Step 2: Backend -->
+  <g transform="translate(190, 52)">
+    <rect x="0" y="0" width="130" height="96" rx="8" fill="url(#step-purple)" stroke="#a855f7" stroke-width="1.2" />
+    <circle cx="16" cy="18" r="4" fill="#c084fc" />
+    <text x="28" y="22" class="mono" fill="#c084fc" font-size="10" font-weight="700">SERVER</text>
+    <text x="14" y="52" class="mono node-title" fill="#f8fafc">Backend</text>
+    <text x="14" y="70" class="mono node-sub">Node.js Runtime</text>
+    <rect x="14" y="80" width="75" height="4" rx="2" fill="#a855f7" opacity="0.6" />
+  </g>
+
+  <!-- Arrow 2 -->
+  <g class="flow-arrow" transform="translate(326, 92)">
+    <path d="M0 8 L24 8 M16 2 L24 8 L16 14" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Step 3: Database -->
+  <g transform="translate(356, 52)">
+    <rect x="0" y="0" width="130" height="96" rx="8" fill="url(#step-green)" stroke="#10b981" stroke-width="1.2" />
+    <circle cx="16" cy="18" r="4" fill="#34d399" />
+    <text x="28" y="22" class="mono" fill="#34d399" font-size="10" font-weight="700">STORAGE</text>
+    <text x="14" y="52" class="mono node-title" fill="#f8fafc">Database</text>
+    <text x="14" y="70" class="mono node-sub">MongoDB • DBMS</text>
+    <rect x="14" y="80" width="75" height="4" rx="2" fill="#10b981" opacity="0.6" />
+  </g>
+
+  <!-- Arrow 3 -->
+  <g class="flow-arrow" transform="translate(492, 92)">
+    <path d="M0 8 L24 8 M16 2 L24 8 L16 14" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Step 4: APIs -->
+  <g transform="translate(522, 52)">
+    <rect x="0" y="0" width="130" height="96" rx="8" fill="url(#step-blue)" stroke="#3b82f6" stroke-width="1.2" />
+    <circle cx="16" cy="18" r="4" fill="#60a5fa" />
+    <text x="28" y="22" class="mono" fill="#60a5fa" font-size="10" font-weight="700">CONNECTIVITY</text>
+    <text x="14" y="52" class="mono node-title" fill="#f8fafc">APIs</text>
+    <text x="14" y="70" class="mono node-sub">RESTful Endpoints</text>
+    <rect x="14" y="80" width="75" height="4" rx="2" fill="#3b82f6" opacity="0.6" />
+  </g>
+
+  <!-- Arrow 4 -->
+  <g class="flow-arrow" transform="translate(658, 92)">
+    <path d="M0 8 L24 8 M16 2 L24 8 L16 14" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Step 5: Full-Stack Applications -->
+  <g transform="translate(688, 52)">
+    <rect x="0" y="0" width="108" height="96" rx="8" fill="url(#step-violet)" stroke="#c084fc" stroke-width="1.2" />
+    <circle cx="16" cy="18" r="4" fill="#e879f9" />
+    <text x="28" y="22" class="mono" fill="#e879f9" font-size="9" font-weight="700">INTEGRATION</text>
+    <text x="10" y="52" class="mono" fill="#f8fafc" font-size="11" font-weight="700">Full-Stack</text>
+    <text x="10" y="66" class="mono" fill="#f8fafc" font-size="11" font-weight="700">Applications</text>
+    <rect x="10" y="80" width="70" height="4" rx="2" fill="#c084fc" opacity="0.6" />
+  </g>
+
+</svg>

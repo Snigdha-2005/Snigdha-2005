@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 290" width="100%" height="290" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="hero-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#0e1726" />
+      <stop offset="100%" stop-color="#0b0f19" />
+    </linearGradient>
+
+    <!-- Border Glow Gradient -->
+    <linearGradient id="hero-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Text Title Gradient -->
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="45%" stop-color="#f8fafc" />
+      <stop offset="70%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Accent Beam Gradient -->
+    <linearGradient id="beam-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0" />
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Radial Ambient Glows -->
+    <radialGradient id="cyan-glow" cx="15%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#0b0f19" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="purple-glow" cx="85%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#0b0f19" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Filter Glow -->
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+    }
+    .typing-text {
+      font-size: 15px;
+      font-weight: 500;
+      fill: #38bdf8;
+      letter-spacing: 0.8px;
+    }
+    .cursor {
+      animation: blink 1.05s infinite;
+    }
+    @keyframes blink {
+      0%, 45% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    .status-pulse {
+      animation: pulseGreen 2.2s infinite ease-in-out;
+    }
+    @keyframes pulseGreen {
+      0% { r: 4px; opacity: 0.8; }
+      50% { r: 5.5px; opacity: 1; filter: drop-shadow(0 0 6px #22c55e); }
+      100% { r: 4px; opacity: 0.8; }
+    }
+    .beam-flow {
+      animation: beamMove 5s linear infinite;
+    }
+    @keyframes beamMove {
+      0% { transform: translateX(-400px); }
+      100% { transform: translateX(900px); }
+    }
+  </style>
+
+  <!-- Base Card -->
+  <rect x="2" y="2" width="896" height="286" rx="14" fill="url(#hero-bg)" stroke="url(#hero-border)" stroke-width="1.5" />
+
+  <!-- Ambient Glow Backdrops -->
+  <rect x="2" y="2" width="896" height="286" rx="14" fill="url(#cyan-glow)" />
+  <rect x="2" y="2" width="896" height="286" rx="14" fill="url(#purple-glow)" />
+
+  <!-- Subtle Cyber Grid -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="48" x2="900" y2="48" />
+    <line x1="0" y1="96" x2="900" y2="96" />
+    <line x1="0" y1="144" x2="900" y2="144" />
+    <line x1="0" y1="192" x2="900" y2="192" />
+    <line x1="0" y1="240" x2="900" y2="240" />
+    <line x1="150" y1="0" x2="150" y2="290" />
+    <line x1="300" y1="0" x2="300" y2="290" />
+    <line x1="450" y1="0" x2="450" y2="290" />
+    <line x1="600" y1="0" x2="600" y2="290" />
+    <line x1="750" y1="0" x2="750" y2="290" />
+  </g>
+
+  <!-- Top Accent Moving Beam -->
+  <g clip-path="url(#top-border-clip)">
+    <clipPath id="top-border-clip">
+      <rect x="2" y="2" width="896" height="6" rx="4" />
+    </clipPath>
+    <rect class="beam-flow" x="0" y="2" width="300" height="2" fill="url(#beam-grad)" />
+  </g>
+
+  <!-- Content Container -->
+  <g transform="translate(48, 42)">
+
+    <!-- Top Badge / Status Row -->
+    <g>
+      <!-- Role Badge -->
+      <rect x="0" y="0" width="260" height="26" rx="13" fill="rgba(6, 182, 212, 0.12)" stroke="rgba(34, 211, 238, 0.35)" stroke-width="1" />
+      <circle cx="16" cy="13" r="3.5" fill="#22d3ee" />
+      <text x="28" y="17.5" class="font-mono" fill="#22d3ee" font-size="11" font-weight="600" letter-spacing="1">FULL-STACK DEVELOPER</text>
+      <text x="210" y="17.5" class="font-sans" fill="#94a3b8" font-size="11">🇮🇳 INDIA</text>
+
+      <!-- Active Status Indicator -->
+      <g transform="translate(620, 0)">
+        <rect x="0" y="0" width="180" height="26" rx="13" fill="rgba(34, 197, 94, 0.1)" stroke="rgba(34, 197, 94, 0.3)" stroke-width="1" />
+        <circle cx="16" cy="13" r="4" fill="#22c55e" class="status-pulse" />
+        <text x="28" y="17" class="font-mono" fill="#4ade80" font-size="10.5" font-weight="600" letter-spacing="0.5">OPEN TO COLLAB</text>
+      </g>
+    </g>
+
+    <!-- Main Headline: 👋 Hi, I'm Snigdha Das -->
+    <g transform="translate(0, 72)">
+      <text x="0" y="0" class="font-sans" font-size="38" font-weight="800" fill="url(#title-grad)" letter-spacing="-0.5px">
+        👋 Hi, I'm Snigdha Das
+      </text>
+    </g>
+
+    <!-- Subtitle: Full-Stack Developer from India -->
+    <g transform="translate(0, 110)">
+      <text x="0" y="0" class="font-sans" font-size="18" font-weight="500" fill="#94a3b8">
+        Full-Stack Developer from India
+      </text>
+    </g>
+
+    <!-- Animated Typing Line Box -->
+    <g transform="translate(0, 142)">
+      <rect x="0" y="0" width="460" height="38" rx="8" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+      <!-- Terminal prompt symbol -->
+      <text x="14" y="24" class="font-mono" fill="#a855f7" font-size="14" font-weight="700">&gt;</text>
+      <!-- Typing Line Content -->
+      <text x="32" y="24" class="font-mono typing-text">
+        Building • Learning • Experimenting • Creating
+      </text>
+      <!-- Animated Blinking Cursor -->
+      <rect class="cursor" x="422" y="11" width="8" height="16" rx="1" fill="#38bdf8" />
+    </g>
+
+    <!-- Tech Stack Pill Row on Bottom Right -->
+    <g transform="translate(480, 142)">
+      <rect x="0" y="0" width="60" height="36" rx="6" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(6, 182, 212, 0.3)" />
+      <text x="30" y="23" text-anchor="middle" class="font-mono" fill="#22d3ee" font-size="11" font-weight="600">HTML</text>
+
+      <rect x="68" y="0" width="56" height="36" rx="6" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(6, 182, 212, 0.3)" />
+      <text x="96" y="23" text-anchor="middle" class="font-mono" fill="#22d3ee" font-size="11" font-weight="600">CSS</text>
+
+      <rect x="132" y="0" width="48" height="36" rx="6" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(245, 158, 11, 0.3)" />
+      <text x="156" y="23" text-anchor="middle" class="font-mono" fill="#fbbf24" font-size="11" font-weight="600">JS</text>
+
+      <rect x="188" y="0" width="64" height="36" rx="6" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(168, 85, 247, 0.3)" />
+      <text x="220" y="23" text-anchor="middle" class="font-mono" fill="#c084fc" font-size="11" font-weight="600">NODE</text>
+
+      <rect x="260" y="0" width="60" height="36" rx="6" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(16, 185, 129, 0.3)" />
+      <text x="290" y="23" text-anchor="middle" class="font-mono" fill="#34d399" font-size="11" font-weight="600">MONGO</text>
+    </g>
+
+  </g>
+</svg>
