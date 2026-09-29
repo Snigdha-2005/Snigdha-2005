@@ -5,14 +5,6 @@
     <img src="assets/snigdha-hero.svg" alt="Snigdha Das — Full-Stack Developer Banner" width="100%" />
   </a>
 
-  # 👋 Hi, I'm Snigdha Das
-  ### Full-Stack Developer from India
-
-  <!-- Dynamic Typing Line -->
-  <a href="https://github.com/Snigdha-2005">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=1000&color=22D3EE&center=true&vCenter=true&width=550&height=45&lines=Building+%E2%80%A2+Learning+%E2%80%A2+Experimenting+%E2%80%A2+Creating;Full-Stack+Developer+from+India;Turning+ideas+into+practical+web+applications" alt="Typing Animation: Building, Learning, Experimenting, Creating" />
-  </a>
-
   <!-- Animated Divider -->
   <img src="assets/snigdha-divider.svg" alt="Futuristic Divider" width="100%" />
 
@@ -45,6 +37,14 @@
 <!-- 2. PROFILE INTRO -->
 ## 🧭 About Me
 
+<!-- Animated About Me Card -->
+<div align="center">
+  <img src="assets/about-card.svg" alt="About Snigdha Das — Full-Stack Developer" width="100%" />
+</div>
+
+<details>
+<summary><b>📋 View About Me (Raw Text)</b></summary>
+
 > I'm **Snigdha Das**, a passionate full-stack developer from India who enjoys turning ideas into practical web applications.
 
 Focused on the complete lifecycle of modern software:
@@ -53,6 +53,8 @@ Focused on the complete lifecycle of modern software:
 * 🗄️ **Databases** — Designing resilient schemas and managing structured data stores
 * 📐 **Web Application Architecture** — Connecting interfaces, APIs, and persistence layers seamlessly
 * 🚀 **Continuous Learning** — Constantly leveling up engineering foundations and adopting best practices
+
+</details>
 
 <div align="center">
   <img src="assets/snigdha-divider.svg" alt="Futuristic Divider" width="100%" />
@@ -65,6 +67,7 @@ Focused on the complete lifecycle of modern software:
 
 > A full-stack web application focused on managing library-related operations through a structured web interface.
 
+<!-- Animated Architecture Flow Pipeline -->
 <div align="center">
   <a href="https://github.com/Snigdha-2005/Full-Stack-Library-Management">
     <img src="assets/building-flow.svg" alt="Full-Stack Library Management Animated Pipeline" width="100%" />
@@ -90,8 +93,20 @@ Library Management
 
 <br/>
 
+<!-- Animated Project Repository & Focus Card -->
+<div align="center">
+  <a href="https://github.com/Snigdha-2005/Full-Stack-Library-Management">
+    <img src="assets/project-card.svg" alt="Full-Stack Library Management Repository Card" width="100%" />
+  </a>
+</div>
+
+<details>
+<summary><b>📋 View Project Details (Raw Text)</b></summary>
+
 * **Core Focus:** Clean separation of concerns between client views, backend routing, and database records.
 * **Repository:** [github.com/Snigdha-2005/Full-Stack-Library-Management](https://github.com/Snigdha-2005/Full-Stack-Library-Management)
+
+</details>
 
 <div align="center">
   <img src="assets/snigdha-divider.svg" alt="Futuristic Divider" width="100%" />
