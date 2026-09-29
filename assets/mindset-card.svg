@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 200" width="100%" height="200" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="mc-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" stop-opacity="0.96" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.98" />
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="mc-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.5" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="mc-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; }
+    .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+
+    /* Animated light sweep */
+    .top-laser {
+      animation: laserSweep 4s linear infinite;
+    }
+    @keyframes laserSweep {
+      0% { transform: translateX(-350px); }
+      100% { transform: translateX(850px); }
+    }
+
+    /* Icon Glow Breathing */
+    .icon-pulse-1 { animation: p1 2.4s infinite ease-in-out; }
+    .icon-pulse-2 { animation: p2 2.4s infinite ease-in-out 0.6s; }
+    .icon-pulse-3 { animation: p3 2.4s infinite ease-in-out 1.2s; }
+    .icon-pulse-4 { animation: p4 2.4s infinite ease-in-out 1.8s; }
+
+    @keyframes p1 { 0%, 100% { filter: drop-shadow(0 0 2px #facc15); } 50% { filter: drop-shadow(0 0 8px #facc15); } }
+    @keyframes p2 { 0%, 100% { filter: drop-shadow(0 0 2px #38bdf8); } 50% { filter: drop-shadow(0 0 8px #38bdf8); } }
+    @keyframes p3 { 0%, 100% { filter: drop-shadow(0 0 2px #4ade80); } 50% { filter: drop-shadow(0 0 8px #4ade80); } }
+    @keyframes p4 { 0%, 100% { filter: drop-shadow(0 0 2px #c084fc); } 50% { filter: drop-shadow(0 0 8px #c084fc); } }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="2" y="2" width="846" height="196" rx="12" fill="url(#mc-bg)" stroke="url(#mc-border)" stroke-width="1.5" />
+
+  <!-- Top Laser Beam -->
+  <g clip-path="url(#top-clip)">
+    <clipPath id="top-clip">
+      <rect x="2" y="2" width="846" height="6" rx="3" />
+    </clipPath>
+    <rect class="top-laser" x="0" y="2" width="280" height="2.5" fill="#22d3ee" />
+  </g>
+
+  <!-- Cyber Grid -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="50" x2="850" y2="50" />
+    <line x1="0" y1="120" x2="850" y2="120" />
+    <line x1="425" y1="0" x2="425" y2="200" />
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(24, 26)">
+    <circle cx="6" cy="6" r="4" fill="#a855f7" />
+    <text x="20" y="10" class="mono" fill="#c084fc" font-size="11.5" font-weight="700" letter-spacing="1">ENGINEERING MINDSET &amp; PHILOSOPHY</text>
+    <text x="615" y="10" class="mono" fill="#94a3b8" font-size="11">CORE PRINCIPLES</text>
+  </g>
+
+  <!-- 4 Principles Grid (2x2) -->
+
+  <!-- Item 1: Learn continuously -->
+  <g transform="translate(36, 56)">
+    <rect x="0" y="0" width="375" height="54" rx="8" fill="#0f172a" stroke="rgba(250, 204, 21, 0.25)" stroke-width="1" />
+    <rect class="icon-pulse-1" x="12" y="12" width="30" height="30" rx="6" fill="rgba(250, 204, 21, 0.12)" />
+    <text x="27" y="32" text-anchor="middle" font-size="16">⚡</text>
+    <text x="54" y="27" class="sans" fill="#ffffff" font-size="14" font-weight="700">Learn continuously.</text>
+    <text x="54" y="42" class="mono" fill="#94a3b8" font-size="10.5">Staying curious and mastering modern engineering.</text>
+  </g>
+
+  <!-- Item 2: Build practically -->
+  <g transform="translate(438, 56)">
+    <rect x="0" y="0" width="375" height="54" rx="8" fill="#0f172a" stroke="rgba(56, 189, 248, 0.25)" stroke-width="1" />
+    <rect class="icon-pulse-2" x="12" y="12" width="30" height="30" rx="6" fill="rgba(56, 189, 248, 0.12)" />
+    <text x="27" y="32" text-anchor="middle" font-size="16">🔨</text>
+    <text x="54" y="27" class="sans" fill="#ffffff" font-size="14" font-weight="700">Build practically.</text>
+    <text x="54" y="42" class="mono" fill="#94a3b8" font-size="10.5">Turning concepts into functional, real-world tools.</text>
+  </g>
+
+  <!-- Item 3: Keep improving -->
+  <g transform="translate(36, 122)">
+    <rect x="0" y="0" width="375" height="54" rx="8" fill="#0f172a" stroke="rgba(74, 222, 128, 0.25)" stroke-width="1" />
+    <rect class="icon-pulse-3" x="12" y="12" width="30" height="30" rx="6" fill="rgba(74, 222, 128, 0.12)" />
+    <text x="27" y="32" text-anchor="middle" font-size="16">📈</text>
+    <text x="54" y="27" class="sans" fill="#ffffff" font-size="14" font-weight="700">Keep improving.</text>
+    <text x="54" y="42" class="mono" fill="#94a3b8" font-size="10.5">Iterating on architecture, performance, and code quality.</text>
+  </g>
+
+  <!-- Item 4: Write code that solves real problems -->
+  <g transform="translate(438, 122)">
+    <rect x="0" y="0" width="375" height="54" rx="8" fill="#0f172a" stroke="rgba(192, 132, 252, 0.25)" stroke-width="1" />
+    <rect class="icon-pulse-4" x="12" y="12" width="30" height="30" rx="6" fill="rgba(192, 132, 252, 0.12)" />
+    <text x="27" y="32" text-anchor="middle" font-size="16">💡</text>
+    <text x="54" y="27" class="sans" fill="#ffffff" font-size="14" font-weight="700">Write code that solves real problems.</text>
+    <text x="54" y="42" class="mono" fill="#94a3b8" font-size="10.5">Focusing on utility, resilience, and user value.</text>
+  </g>
+</svg>

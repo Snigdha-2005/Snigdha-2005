@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 180" width="100%" height="180" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="ft-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" stop-opacity="0.97" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.97" />
+    </linearGradient>
+
+    <!-- Animated Border Gradient -->
+    <linearGradient id="ft-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4">
+        <animate attributeName="stop-color" values="#06b6d4;#a855f7;#3b82f6;#06b6d4" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#a855f7">
+        <animate attributeName="stop-color" values="#a855f7;#3b82f6;#06b6d4;#a855f7" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#3b82f6">
+        <animate attributeName="stop-color" values="#3b82f6;#06b6d4;#a855f7;#3b82f6" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Text Gradient -->
+    <linearGradient id="ft-text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="50%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <filter id="ft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; }
+    .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+
+    .pulse-star {
+      animation: pStar 2.5s infinite ease-in-out;
+      transform-origin: 425px 145px;
+    }
+    @keyframes pStar {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 3px #fbbf24); }
+      50% { transform: scale(1.18); filter: drop-shadow(0 0 10px #fbbf24); }
+    }
+
+    .shimmer-line {
+      stroke-dasharray: 20 200;
+      animation: shimLine 3.5s linear infinite;
+    }
+    @keyframes shimLine {
+      0% { stroke-dashoffset: 220; }
+      100% { stroke-dashoffset: -220; }
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="2" y="2" width="846" height="176" rx="12" fill="url(#ft-bg)" stroke="url(#ft-border)" stroke-width="1.5" />
+
+  <!-- Cyber Grid -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="45" x2="850" y2="45" />
+    <line x1="0" y1="90" x2="850" y2="90" />
+    <line x1="0" y1="135" x2="850" y2="135" />
+    <line x1="212" y1="0" x2="212" y2="180" />
+    <line x1="425" y1="0" x2="425" y2="180" />
+    <line x1="638" y1="0" x2="638" y2="180" />
+  </g>
+
+  <!-- Top Accent Shimmer Line -->
+  <line x1="60" y1="18" x2="790" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1.2" />
+  <line x1="60" y1="18" x2="790" y2="18" stroke="#22d3ee" stroke-width="2" class="shimmer-line" filter="url(#ft-glow)" />
+
+  <!-- Content -->
+  <g transform="translate(425, 60)" text-anchor="middle">
+    <!-- Main Greeting -->
+    <text y="0" class="sans" fill="url(#ft-text-grad)" font-size="20" font-weight="700" letter-spacing="-0.3px">
+      Thanks for visiting my profile 👋
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text y="34" class="mono" fill="#94a3b8" font-size="14" font-weight="500">
+      Let's build something meaningful.
+    </text>
+  </g>
+
+  <!-- Bottom Accent Shimmer Line -->
+  <line x1="60" y1="126" x2="790" y2="126" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1.2" />
+  <line x1="60" y1="126" x2="790" y2="126" stroke="#c084fc" stroke-width="2" class="shimmer-line" filter="url(#ft-glow)" />
+
+  <!-- Star Badge -->
+  <g transform="translate(425, 150)" text-anchor="middle" class="pulse-star">
+    <text y="0" class="sans" fill="#fbbf24" font-size="12" font-weight="600" letter-spacing="0.5">
+      ⭐ Thanks for stopping by!
+    </text>
+  </g>
+</svg>

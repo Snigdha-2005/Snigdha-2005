@@ -24,7 +24,7 @@
 </div>
 
 <details>
-<summary><b>📋 View Terminal Status Card (Text)</b></summary>
+<summary><b>📋 View Terminal Status Card (Raw Text)</b></summary>
 
 ```text
 ┌─ snigdha@github ~
@@ -67,11 +67,12 @@ Focused on the complete lifecycle of modern software:
 
 <div align="center">
   <a href="https://github.com/Snigdha-2005/Full-Stack-Library-Management">
-    <img src="assets/project-architecture.svg" alt="Full-Stack Library Management Architecture Pipeline" width="100%" />
+    <img src="assets/building-flow.svg" alt="Full-Stack Library Management Animated Pipeline" width="100%" />
   </a>
 </div>
 
-<br/>
+<details>
+<summary><b>🔍 View Pipeline Text Flowchart</b></summary>
 
 ```text
 Frontend
@@ -85,6 +86,10 @@ Database
 Library Management
 ```
 
+</details>
+
+<br/>
+
 * **Core Focus:** Clean separation of concerns between client views, backend routing, and database records.
 * **Repository:** [github.com/Snigdha-2005/Full-Stack-Library-Management](https://github.com/Snigdha-2005/Full-Stack-Library-Management)
 
@@ -95,22 +100,21 @@ Library Management
 <!-- 4. TECH STACK -->
 ## ⚡ Tech Stack
 
-A curated toolset focused on building robust, responsive, and functional web applications:
+<!-- Animated Tech Stack Dashboard -->
+<div align="center">
+  <img src="assets/tech-stack.svg" alt="Animated Tech Stack Ecosystem" width="100%" />
+</div>
 
-### 🎨 Frontend
-<p align="left">
+<br/>
+
+<!-- Shields Badges -->
+<p align="center">
   <img src="https://img.shields.io/badge/HTML5-0b0f19?style=for-the-badge&logo=html5&logoColor=22d3ee&labelColor=0f172a" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-0b0f19?style=for-the-badge&logo=css3&logoColor=22d3ee&labelColor=0f172a" alt="CSS3" />
   <img src="https://img.shields.io/badge/JavaScript-0b0f19?style=for-the-badge&logo=javascript&logoColor=fbbf24&labelColor=0f172a" alt="JavaScript" />
-</p>
-
-### ⚙️ Backend
-<p align="left">
+  &nbsp;•&nbsp;
   <img src="https://img.shields.io/badge/Node.js-0b0f19?style=for-the-badge&logo=nodedotjs&logoColor=a855f7&labelColor=0f172a" alt="Node.js" />
-</p>
-
-### 🗄️ Database & Storage
-<p align="left">
+  &nbsp;•&nbsp;
   <img src="https://img.shields.io/badge/MongoDB-0b0f19?style=for-the-badge&logo=mongodb&logoColor=34d399&labelColor=0f172a" alt="MongoDB" />
   <img src="https://img.shields.io/badge/DBMS-Database_Systems-0b0f19?style=for-the-badge&logo=databricks&logoColor=38bdf8&labelColor=0f172a" alt="DBMS" />
 </p>
@@ -169,11 +173,13 @@ Building...
 
 **Full-Stack Development**
 
+<!-- Animated Learning Pipeline -->
 <div align="center">
-  <img src="assets/learning-journey.svg" alt="Full-Stack Learning Journey Roadmap" width="100%" />
+  <img src="assets/learning-pipeline.svg" alt="Full-Stack Learning Animated Roadmap" width="100%" />
 </div>
 
-<br/>
+<details>
+<summary><b>🔍 View Learning Roadmap Flowchart</b></summary>
 
 ```text
 Frontend
@@ -186,6 +192,10 @@ APIs
    ↓
 Full-Stack Applications
 ```
+
+</details>
+
+<br/>
 
 Actively exploring how modern full-stack systems interconnect: from stateful client interfaces and RESTful route orchestration to database index optimization and data persistence patterns.
 
@@ -219,6 +229,21 @@ Actively exploring how modern full-stack systems interconnect: from stateful cli
 <!-- 8. CONTRIBUTION ACTIVITY -->
 ## 📈 Contribution Activity
 
+<!-- Animated Contribution Flow Pipeline -->
+<div align="center">
+  <img src="assets/contribution-flow.svg" alt="Automated Contribution Flow Pipeline" width="100%" />
+</div>
+
+<br/>
+
+<!-- Animated Contribution Grid Snake Matrix -->
+<div align="center">
+  <img src="assets/snake-preview.svg" alt="GitHub Contribution Snake Preview" width="100%" />
+</div>
+
+<details>
+<summary><b>🔍 View Contribution Flow Text & Action Status</b></summary>
+
 ```text
 Contribution Graph
         ↓
@@ -227,15 +252,9 @@ Animated Snake
 Open Source Activity
 ```
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Snigdha-2005/Snigdha-2005/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Snigdha-2005/Snigdha-2005/output/github-contribution-grid-snake.svg" />
-    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/Snigdha-2005/Snigdha-2005/output/github-contribution-grid-snake.svg" width="100%" />
-  </picture>
-</div>
+*Configured via `.github/workflows/snake.yml` to automatically trace contribution streaks.*
 
-> *Configured via `.github/workflows/snake.yml` to automatically trace contribution streaks.*
+</details>
 
 <div align="center">
   <img src="assets/snigdha-divider.svg" alt="Futuristic Divider" width="100%" />
@@ -244,10 +263,20 @@ Open Source Activity
 <!-- 9. DEVELOPER MINDSET -->
 ## 🧠 Developer Mindset
 
+<!-- Animated Mindset Card -->
+<div align="center">
+  <img src="assets/mindset-card.svg" alt="Developer Mindset & Philosophy" width="100%" />
+</div>
+
+<details>
+<summary><b>📋 View Mindset Principles (Text)</b></summary>
+
 > ⚡ **Learn continuously.**  
 > 🔨 **Build practically.**  
 > 📈 **Keep improving.**  
 > 💡 **Write code that solves real problems.**  
+
+</details>
 
 <div align="center">
   <img src="assets/snigdha-divider.svg" alt="Futuristic Divider" width="100%" />
@@ -256,18 +285,10 @@ Open Source Activity
 <!-- 10. PROFILE FOOTER -->
 <div align="center">
 
-```text
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  <!-- Animated Footer Card -->
+  <img src="assets/snigdha-footer.svg" alt="Profile Footer Banner" width="100%" />
 
-      Thanks for visiting my profile 👋
-
-      Let's build something meaningful.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
-
+  <br/><br/>
   <img src="assets/snigdha-divider.svg" alt="Futuristic Divider" width="100%" />
-
-  <p>⭐ <b>Thanks for stopping by!</b></p>
 
 </div>
